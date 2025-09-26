@@ -122,7 +122,7 @@ NOTE: Para obtener más información sobre el formato de los parámetros del pod
 
 === Detalles acerca de forzar separación
 
-Forzar separación está disponible sólo para `ontap-san`, `ontap-san-economy` y. `onatp-nas-economy` Antes de habilitar la desconexión forzada, se debe habilitar el cierre de nodos (NGN) no controlado en el clúster de Kubernetes. Para obtener más información, consulte link:https://kubernetes.io/docs/concepts/architecture/nodes/#non-graceful-node-shutdown["Kubernetes: Cierre de nodo sin gracia"^].
+La separación forzada está disponible para `ontap-san` , `ontap-san-economy` y `ontap-nas-economy` solo.  Antes de habilitar la desconexión forzada, se debe habilitar el apagado de nodo no elegante (NGNS) en el clúster de Kubernetes. Para obtener más información, consulte link:https://kubernetes.io/docs/concepts/architecture/nodes/#non-graceful-node-shutdown["Kubernetes: Cierre de nodo sin gracia"^] .
 
 
 NOTE: Cuando se utiliza `ontap-nas-economy` el controlador, es necesario establecer el `autoExportPolicy` parámetro en la configuración de backend para `true` que Trident pueda restringir el acceso desde el nodo de Kubernetes con la contaminación aplicada mediante políticas de exportación gestionadas.
