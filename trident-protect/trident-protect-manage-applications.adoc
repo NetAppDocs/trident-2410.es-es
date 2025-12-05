@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: trident-protect/trident-protect-manage-applications.html 
 keywords: appvault, data protection, custom resource, namespace, application, cluster 
-summary: Puede hacer que Trident Protect sea consciente de una aplicación que desea administrar mediante la creación de un CR de aplicación y un CR de AppVault asociado. 
+summary: Puede hacer que Trident Protect conozca una aplicación que desea administrar creando un CR de aplicación y un CR de AppVault asociado. 
 ---
-= Defina una aplicación para administrar con Trident Protect
+= Definir una aplicación para la gestión con Trident Protect
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,13 +20,13 @@ Puede definir una aplicación que desee administrar con Trident Protect creando 
 
 == Cree un CR de AppVault
 
-Debe crear un CR de AppVault que se utilizará al realizar operaciones de protección de datos en la aplicación, y el CR de AppVault debe residir en el clúster donde está instalado Trident Protect. AppVault CR es específico de su entorno; para ver ejemplos de AppVault CRS, consulte link:trident-protect-appvault-custom-resources.html["Recursos personalizados de AppVault."]
+Debe crear un CR de AppVault que se utilizará al realizar operaciones de protección de datos en la aplicación, y el CR de AppVault debe residir en el clúster donde está instalado Trident Protect. La solicitud de cambio (CR) de AppVault es específica de su entorno; para ver ejemplos de solicitudes de cambio de cambio de AppVault, consultelink:trident-protect-appvault-custom-resources.html["Recursos personalizados de AppVault."]
 
 
 
 == Defina una aplicación
 
-Debe definir cada aplicación que desee gestionar con Trident Protect. Puede definir una aplicación para la gestión creando manualmente una CR de aplicación o mediante el uso de la CLI de Trident Protect.
+Debe definir cada aplicación que desee administrar con Trident Protect. Puede definir una aplicación para su administración ya sea creando manualmente un CR de aplicación o utilizando la CLI de Trident Protect.
 
 [role="tabbed-block"]
 ====
