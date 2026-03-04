@@ -150,20 +150,20 @@ Consulte el siguiente ejemplo:
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-name: netapp-san-us-east1
+  name: netapp-san-us-east1
 provisioner: csi.trident.netapp.io
 volumeBindingMode: WaitForFirstConsumer
 allowedTopologies:
-- matchLabelExpressions:
-- key: topology.kubernetes.io/zone
-  values:
-  - us-east1-a
-  - us-east1-b
-- key: topology.kubernetes.io/region
-  values:
-  - us-east1
+  - matchLabelExpressions:
+    - key: topology.kubernetes.io/zone
+      values:
+        - us-east1-a
+        - us-east1-b
+    - key: topology.kubernetes.io/region
+      values:
+        - us-east1
 parameters:
-  fsType: "ext4"
+  fsType: ext4
 ----
 En la definición de StorageClass proporcionada anteriormente, `volumeBindingMode` se establece en `WaitForFirstConsumer`. Las RVP solicitadas con este tipo de almacenamiento no se verán en cuestión hasta que se mencionan en un pod. Y, `allowedTopologies` proporciona las zonas y la región que se van a utilizar.  `netapp-san-us-east1`StorageClass crea RVP en el `san-backend-us-east1` backend definido anteriormente.
 
