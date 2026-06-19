@@ -39,16 +39,16 @@ RWO, ROX, RWX, RWOP
 
 == Obtén más información sobre el soporte de Trident para Cloud Volumes Service para Google Cloud
 
-Trident puede crear volúmenes de Cloud Volumes Service en uno de estos doslink:https://cloud.google.com/architecture/partners/netapp-cloud-volumes/service-types["tipos de servicio"^]:
+Trident puede crear volúmenes de Cloud Volumes Service en uno de dos link:https://docs.cloud.google.com/netapp/volumes/docs/discover/overview["tipos de servicio"^]:
 
-* *CVS-Performance*: El tipo de servicio Trident predeterminado. Este tipo de servicio optimizado para el rendimiento es más adecuado para cargas de trabajo de producción que valoran el rendimiento. El tipo de servicio CVS-Performance es una opción de hardware que admite volúmenes con un tamaño mínimo de 100 GIB. Puede elegir una de link:https://cloud.google.com/architecture/partners/netapp-cloud-volumes/service-levels#service_levels_for_the_cvs-performance_service_type["tres niveles de servicio"^]las opciones:
+* *CVS-Performance*: El tipo de servicio predeterminado de Trident. Este tipo de servicio optimizado para el rendimiento es el más adecuado para cargas de trabajo de producción que valoran el rendimiento. El tipo de servicio CVS-Performance es una opción de hardware que admite volúmenes con un tamaño mínimo de 100 GiB. Puedes elegir una de link:https://docs.cloud.google.com/netapp/volumes/docs/discover/overview["tres niveles de servicio"^]:
 +
 ** `standard`
 ** `premium`
 ** `extreme`
 
 
-* *CVS*: El tipo de servicio CVS proporciona una alta disponibilidad zonal con niveles de rendimiento limitados a moderados. El tipo de servicio CVS es una opción de software que usa pools de almacenamiento para admitir volúmenes de solo 1 GIB. El pool de almacenamiento puede contener hasta 50 volúmenes en los que todos los volúmenes comparten la capacidad y el rendimiento del pool. Puede elegir una de link:https://cloud.google.com/architecture/partners/netapp-cloud-volumes/service-levels#service_levels_for_the_cvs_service_type["dos niveles de servicio"^]las opciones:
+* *CVS*: El tipo de servicio CVS ofrece una alta disponibilidad zonal con niveles de rendimiento que van de limitados a moderados. El tipo de servicio CVS es una opción de software que utiliza grupos de almacenamiento para admitir volúmenes de tan solo 1 GiB. El grupo de almacenamiento puede contener hasta 50 volúmenes donde todos los volúmenes comparten la capacidad y el rendimiento del grupo. Puedes elegir una de link:https://docs.cloud.google.com/netapp/volumes/docs/discover/overview["dos niveles de servicio"^]:
 +
 ** `standardsw`
 ** `zoneredundantstandardsw`
@@ -57,7 +57,7 @@ Trident puede crear volúmenes de Cloud Volumes Service en uno de estos doslink:
 
 
 .Lo que necesitará
-Para configurar y utilizar el https://cloud.netapp.com/cloud-volumes-service-for-gcp?utm_source=NetAppTrident_ReadTheDocs&utm_campaign=Trident["Cloud Volumes Service para Google Cloud"^] backend, necesita lo siguiente:
+Para configurar y usar el https://www.netapp.com/google-cloud/netapp-volumes/["Cloud Volumes Service para Google Cloud"^] backend, necesitas lo siguiente:
 
 * Una cuenta de Google Cloud configurada con Cloud Volumes Service de NetApp
 * Número de proyecto de su cuenta de Google Cloud
